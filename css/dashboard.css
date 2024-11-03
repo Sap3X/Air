@@ -1,0 +1,64 @@
+header{
+    padding-left: 88% ;
+}
+
+.nav{
+    display: flex;
+    height: 50px;
+    margin-top: 10px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(3px);
+    padding-left: 30px;
+}
+
+nav h1{
+    color: white;
+}
+
+nav h1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.flight .flight-details{
+    margin-top: 280px;
+} 
+
+.employee .employee-details{
+    margin-top: 115px;
+}
+
+.flight,.employee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
+}
+
+.flight .flight-details a, .employee .employee-details a{
+    display: block;
+    padding: 10px 15px;
+}
+
+.flight .flight-details, .employee .employee-details{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+
+.flight:hover .flight-details, .employee:hover .employee-details {
+    display: block;
+}
+
+.flight a:hover, .employee a:hover{
+    background-color: hsl(0, 0%, 90%);
+    color: black;
+}
