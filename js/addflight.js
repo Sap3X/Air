@@ -1,3 +1,4 @@
+//Multi select dynamics
 function updateSubCategory() {
     const mainSelect = document.getElementById('state');
     const subCategorySelect = document.getElementById('airportname');
@@ -110,4 +111,51 @@ function updateItems() {
         option.textContent = item;
         itemSelect.appendChild(option);
     });
+}
+
+// time calculation
+function calculateDifference() {
+    let timeA = document.getElementById('departure').value;
+    let timeB = document.getElementById('arrival').value;
+
+    if (!timeA || !timeB) return;
+
+    let dateA = timeStringToDate(timeA);
+    let dateB = timeStringToDate(timeB);
+
+    if (dateB <= dateA) {
+        dateB.setDate(dateB.getDate() + 1);
+    }
+
+    let differenceInMs = dateB - dateA;
+
+    let differenceInSeconds = Math.floor(differenceInMs / 1000);
+    let differenceInMinutes = Math.floor(differenceInSeconds / 60);
+    let differenceInHours = Math.floor(differenceInMinutes / 60);
+    let days = Math.floor(differenceInHours / 24);
+
+    let formattedDifference = `${days} days, ${differenceInHours % 24} hr, ${differenceInMinutes % 60} min, ${differenceInSeconds % 60} sec`;
+
+    document.getElementById('duration').value = formattedDifference;
+}
+
+function timeStringToDate(timeString) {
+    let [hours, minutes] = timeString.split(':').map(Number);
+    let date = new Date();
+    date.setHours(hours, minutes, 0, 0);
+    return date;
+}
+
+// price calculation
+function sum(){
+    var economy=document.getElementById("economy").value;
+            
+    var business=parseInt(economy)*40/100+parseInt(economy);
+    document.getElementById("business").value=business;
+
+	var student=parseInt(economy)-parseInt(economy)*40/100;
+	document.getElementById("student").value=student;
+
+	var dis=parseInt(economy)-parseInt(economy)*40/100+200;
+	document.getElementById("disable").value=dis;
 }

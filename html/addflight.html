@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/utility.css">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/addflight.css">
-    <script src="../js/addflight.js"></script>
+    <script src="../js/addflight.js" defer></script>
     <title>Add Flights | Airline Management System</title>
 </head>
 <body>
@@ -45,7 +45,7 @@
                     <div class="first">
                         <div class="flightcode">
                             <label for="flightcode">Flight Code</label>
-                            <input type="text" name="flightcode" id="flightcode" tabindex="1" disabled>
+                            <input type="text" inputmode="numeric" name="flightcode" id="flightcode" tabindex="1" disabled required>
                         </div>
     
                         <div class="state">
@@ -93,21 +93,21 @@
     
                         <div class="departure">
                             <label for="departure">Departure</label>
-                            <input type="time" id="departure" name="departure" tabindex="9" required> 
+                            <input type="time" id="departure" name="departure" tabindex="9" onblur="calculateDifference()" required> 
                         </div>
 
                         <h2>Price Tag</h2>
 
                         <div class="economy">
                             <label for="economy">Economy Class</label>
-                            <input type="text" name="economy" id="economy" tabindex="13" required>
+                            <input type="text" inputmode="numeric" name="economy" id="economy" tabindex="13" onfocusOut="sum()" required>
                         </div>
                     </div>
         
                     <div class="second">
                         <div class="airlineid">
                             <label for="airlinesid">Airline ID</label>
-                            <input type="text" name="airlinesid" id="airlinesid" tabindex="2" required>
+                            <input type="text" inputmode="numeric" name="airlinesid" id="airlinesid" tabindex="2">
                         </div>
     
                         <div class="airportname">
@@ -119,12 +119,12 @@
                         
                         <div class="arrival">
                             <label for="arrival">Arrival</label>
-                            <input type="time" id="arrival" name="arrival" tabindex="10" required> 
+                            <input type="time" id="arrival" name="arrival" tabindex="10" onblur="calculateDifference()" required> 
                         </div>
 
                         <div class="business">
                             <label for="business">Business Class</label>
-                            <input type="text" name="business" id="business" tabindex="14" required>
+                            <input type="text" inputmode="numeric" name="business" id="business" tabindex="14" required>
                         </div>
                     </div>
     
@@ -148,7 +148,7 @@
 
                         <div class="student">
                             <label for="student">Economy Class with Student Discount</label>
-                            <input type="text" name="student" id="student" tabindex="15" required>
+                            <input type="text" inputmode="numeric" name="student" id="student" tabindex="15" required>
                         </div>
                     </div>
     
@@ -168,7 +168,7 @@
     
                         <div class="no-of-seat">
                             <label for="no-of-seat">Number of Seats</label>
-                            <input type="text" id="no-of-seat" name="no-of-seat" tabindex="12" required> 
+                            <input type="text" inputmode="numeric" id="no-of-seat" name="no-of-seat" tabindex="12" required> 
                         </div>
 
                         <div class="disable">
@@ -179,7 +179,7 @@
                 </div>
 
                 <div class="button">
-                    <input type="submit" value="submit" name="submit" tabindex="17">
+                    <input type="submit"  value="submit" name="submit" tabindex="17">
                 </div>
             </form>
         </div>
