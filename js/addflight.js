@@ -132,9 +132,8 @@ function calculateDifference() {
     let differenceInSeconds = Math.floor(differenceInMs / 1000);
     let differenceInMinutes = Math.floor(differenceInSeconds / 60);
     let differenceInHours = Math.floor(differenceInMinutes / 60);
-    let days = Math.floor(differenceInHours / 24);
 
-    let formattedDifference = `${days} days, ${differenceInHours % 24} hr, ${differenceInMinutes % 60} min, ${differenceInSeconds % 60} sec`;
+    let formattedDifference = `${differenceInHours % 24} hr, ${differenceInMinutes % 60} min, ${differenceInSeconds % 60} sec`;
 
     document.getElementById('duration').value = formattedDifference;
 }

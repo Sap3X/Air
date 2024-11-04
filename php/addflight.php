@@ -1,16 +1,6 @@
 <?php 
 	$flag=0;
 	require_once "dbconnection.php";
-    if(isset($_POST['submit']))
-    {
-        $airlineid=$_POST['airlinesid'];
-        $airlinename=$_POST['airlinename'];
-
-        $sql0="INSERT INTO `airline`(`AIRLINE_ID`, `AIRLINE_NAME`) VALUES ('$airlineid','$airlinename')";
-
-        $res=mysqli_query($con,$sql0);
-    }
-
 	if(isset($_POST['submit']))
 	{
         $flightcode=$_POST['flightcode'];
@@ -50,7 +40,7 @@
                     if(mysqli_query($con,$sql4)){
                         $flag=$flag+1;
                     }
-                    $sql5="insert into flight(SOURCE,DESTINATION,DEPARTURE,ARRIVAL,DURATION,FLIGHT_CODE,AIRLINE_ID,PRICE_BUSINESS,PRICE_ECONOMY,PRICE_STUDENTS,PRICE_DIFFERENTLYABLED,DATE) values('$source','$destination','$departure','$arrival','$duration','$flightcode','$airlinesid','$business','$economy','$student','$diff','$date')";
+                    $sql5="insert into flight(SOURCE,DESTINATION,DEPARTURE,ARRIVAL,DURATION,FLIGHT_CODE,AIRLINE_ID,PRICE_BUSINESS,PRICE_ECONOMY,PRICE_STUDENTS,PRICE_DIFFERENTLYABLED,DATE) values('$source','$destination','$departure','$arrival','$duration','$flightcode','$airlinesid','$businessclass','$economyclass','$students','$diff','$date')";
                     if(mysqli_query($con,$sql5)){
                         $flag=$flag+1;
                     }

@@ -6,13 +6,12 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/utility.css">
     <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="stylesheet" href="../css/continueflight.css">
-    <title>Continue Flights | Airline Management System</title>
+    <title>Dashboard | Airline Management System</title>
 </head>
 <body>
     <header class="main">
         <ul>
-            <li class="active"><a href="continueflight.html">Continue Flights</a></li>
+            <li class="active"><a href="Dashboard.html">Dashboard</a></li>
             <li><a href="../home.html">Home</a></li>
         </ul>
     </header>
@@ -21,9 +20,8 @@
             <h1>Flight Details</h1>
             <div class="flight-details">
                 <a href="Dashboard.html">Dashboard</a>
-                <a href="viewflight.html">View Flights</a>
+                <a href="../php/viewflight.php">View Flights</a>
                 <a href="addflight.html">Add Flights</a>
-                <a href="continueflight.html">Continue flight</a>
                 <a href="../deletedetails.html">Delete Flights</a>
                 <a href="../modifyadmindetails.html">Modify Flights</a>			
             </div>
@@ -36,5 +34,22 @@
             </div>
         </div>
     </nav>
+    <div class="title">
+		<h1>DELETE FLIGHTS</h1>
+	</div>
+	<form action="deleteadmindetails.php" method="POST">
+		<table class="a" width=35%>
+			<tr>
+				<td>Enter Flight Code</td>
+				<td>
+					<input type="text" placeholder="Flight Code" name="flightcode" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="Submit" value="Delete" name="submit">
+				</td>
+			</tr>
+		</table>
 </body>
 </html>

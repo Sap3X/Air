@@ -51,7 +51,6 @@
                 <a href="../html/Dashboard.html">Dashboard</a>
                 <a href="viewflight.php">View Flights</a>
                 <a href="../html/addflight.html">Add Flights</a>
-                <a href="continueflight.html">Continue Flights</a>
                 <a href="../deletedetails.html">Delete Flights</a>
                 <a href="../modifyadmindetails.html">Modify Flights</a>			
             </div>
