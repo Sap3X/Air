@@ -1,5 +1,5 @@
 header{
-    padding-left: 88.55%;
+    padding-left: 78%;
 }
 
 .addflight{
@@ -12,6 +12,21 @@ header{
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
+}
+
+.get-flight-code{
+    background-color: #004d99;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.get-flight-code:hover {
+    background-color: #003366;
 }
 
 .addflight-child h1 {
@@ -32,7 +47,7 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"], select,input[type="time"] {
+input[type="text"], select,input[type="time"],input[type="date"] {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;

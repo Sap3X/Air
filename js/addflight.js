@@ -159,3 +159,21 @@ function sum(){
 	var dis=parseInt(economy)-parseInt(economy)*40/100+200;
 	document.getElementById("disable").value=dis;
 }
+
+//incrementing 
+window.onload = function() {
+    const savedValue = localStorage.getItem("number") || 0;
+    document.getElementById("flightcode").value = savedValue;
+}
+function incrementNumber() {
+    const input = document.getElementById("flightcode");
+
+    const newValue = parseInt(input.value) + 1;
+    input.value = newValue;
+
+    localStorage.setItem("number", newValue);
+}
+function restartCount() {
+    document.getElementById("flightcode").value = 1001;
+    localStorage.setItem("number", 0);
+}

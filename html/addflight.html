@@ -14,6 +14,7 @@
     <header class="main">
         <ul>
             <li class="active"><a href="addflight.html">Add Flight</a></li>
+            <li><a href="../php/reference.php">Airline ID(Reference)</a></li>
             <li><a href="../home.html">Home</a></li>
         </ul>
     </header>
@@ -39,13 +40,15 @@
     </nav>
     <main class="addflight">
         <div class="addflight-child">
+            <input  type="submit" value="Get Flight-Code" id="get-flight-code" onclick="incrementNumber()" tabindex="1">
+            <input type="submit" value="Restart Flight-Code" id="get-flight-code" onclick="restartCount()">
             <h1>Add Flight Details</h1>
             <form action="../php/addflight.php" method="post">
                 <div class="wrapper">
                     <div class="first">
                         <div class="flightcode">
                             <label for="flightcode">Flight Code</label>
-                            <input type="text" inputmode="numeric" name="flightcode" id="flightcode" tabindex="1" disabled required>
+                            <input type="text" inputmode="numeric" name="flightcode" id="flightcode" readonly required>
                         </div>
     
                         <div class="state">
@@ -166,9 +169,9 @@
                             <input type="text" id="destination" name="destination" tabindex="8" required> 
                         </div>
     
-                        <div class="no-of-seat">
-                            <label for="no-of-seat">Number of Seats</label>
-                            <input type="text" inputmode="numeric" id="no-of-seat" name="no-of-seat" tabindex="12" required> 
+                        <div class="date">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" tabindex="12" required> 
                         </div>
 
                         <div class="disable">
@@ -179,7 +182,7 @@
                 </div>
 
                 <div class="button">
-                    <input type="submit"  value="submit" name="submit" tabindex="17">
+                    <input type="submit"  value="Submit" name="submit" tabindex="17">
                 </div>
             </form>
         </div>
