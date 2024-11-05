@@ -14,6 +14,7 @@
     <header class="main">
         <ul>
             <li class="active"><a href="addflight.html">Add Flight</a></li>
+            <li><a href="airlinedatabase.html">Add Airline</a></li>
             <li><a href="../php/reference.php">Airline ID(Reference)</a></li>
             <li><a href="../home.html">Home</a></li>
         </ul>
@@ -39,15 +40,13 @@
     </nav>
     <main class="addflight">
         <div class="addflight-child">
-            <input  type="submit" value="Get Flight-Code" id="get-flight-code" onclick="incrementNumber()" tabindex="1">
-            <input type="submit" value="Restart Flight-Code" id="get-flight-code" onclick="restartCount()">
             <h1>Add Flight Details</h1>
             <form action="../php/addflight.php" method="post">
                 <div class="wrapper">
                     <div class="first">
                         <div class="flightcode">
                             <label for="flightcode">Flight Code</label>
-                            <input type="text" inputmode="numeric" name="flightcode" id="flightcode" readonly required>
+                            <input type="text" inputmode="numeric" name="flightcode" id="flightcode" required>
                         </div>
     
                         <div class="state">

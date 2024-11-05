@@ -12,14 +12,9 @@
 	<style>
 		.title{
 			position: absolute;
-			top: 15%;
+			top: 18%;
 			left: 40%;
 			/* transform: translate(-50%,-50%);	 */
-		}
-
-		.title h1{
-			color: #fff;
-			font-size: 30px;
 		}
 		
 		table.a{
@@ -51,8 +46,8 @@
                 <a href="../html/Dashboard.html">Dashboard</a>
                 <a href="viewflight.php">View Flights</a>
                 <a href="../html/addflight.html">Add Flights</a>
-                <a href="../deletedetails.html">Delete Flights</a>
-                <a href="../modifyadmindetails.html">Modify Flights</a>			
+                <a href="../html/deleteflight.html">Delete Flights</a>
+                <a href="../html/modifyflight.html">Modify Flights</a>			
             </div>
         </div>
         <div class="employee">

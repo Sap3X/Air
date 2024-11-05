@@ -20,7 +20,7 @@
 		$students=$_POST['student'];
 		$diff=$_POST['disable'];
 
-        $sql="select * from airline where AIRLINE_ID='$airlinesid'";
+        $sql="select * from airline where FLIGHT_CODE='$flightcode'";
        
         $res=mysqli_query($con,$sql);
 		if(mysqli_num_rows($res)>0){
@@ -28,7 +28,7 @@
 			$res=mysqli_query($con,$sql);
 			if(mysqli_num_rows($res)==0){
 				if(strlen($flightcode)==4){
-				    $sql1="insert into city(C_NAME,STATE,COUNTRY) values ('$city','$state','$country')";
+				    $sql1="insert into city(C_NAME,STATE,COUNTRY) values ('$source','$state','$country')";
 				    if(mysqli_query($con,$sql1)){
 				        $flag=$flag+1;
                     }
@@ -63,7 +63,7 @@
             }
         }
         else{
-            echo "<script>alert('Airline Code not in database')</script>";
+            echo "<script>alert('Airline is not update in database.')</script>";
             echo "<script>window.location='../html/addflight.html'</script>";
         }
      }

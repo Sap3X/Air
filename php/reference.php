@@ -30,7 +30,7 @@
         table.a{
 			position: absolute;
 			top: 27%;
-			left: 37%;
+			left: 32%;
 			/*transform: translate(-50%,-50%);*/
 			border: 1px solid #fff;
 			padding: 10px 30px;
@@ -54,12 +54,11 @@
         <div class="flight">
             <h1>Flight Details</h1>
             <div class="flight-details">
-                <a href="Dashboard.html">Dashboard</a>
-                <a href="viewflight.html">View Flights</a>
-                <a href="addflight.html">Add Flights</a>
-                <a href="continueflight.html">Continue flight</a>
-                <a href="../deletedetails.html">Delete Flights</a>
-                <a href="../modifyadmindetails.html">Modify Flights</a>			
+                <a href="../html/Dashboard.html">Dashboard</a>
+                <a href="viewflight.php">View Flights</a>
+                <a href="../html/addflight.html">Add Flights</a>
+                <a href="../html/deleteflight.html">Delete Flights</a>
+                <a href="../html/modifyflight.html">Modify Flights</a>			
             </div>
         </div>
         <div class="employee">
@@ -75,6 +74,7 @@
 	</div>
 	<table class="a">
 	    <tr>
+            <th>Flight code&emsp;</th>
 			<th>Airlines ID&emsp;</th>
 		    <th>Airlines Name&emsp;</th>
         </tr>
@@ -87,6 +87,7 @@
 			    	$rows=mysqli_fetch_array($query);
 		    ?>
 			<tr>
+                <td><?php echo $rows['FLIGHT_CODE']?></td>
 				<td><?php echo $rows['AIRLINE_ID'] ?></td>
 				<td><?php echo $rows['AIRLINE_NAME'] ?></td>	
 			</tr>
