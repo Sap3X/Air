@@ -32,7 +32,7 @@
 				    if(mysqli_query($con,$sql1)){
 				        $flag=$flag+1;
                     }
-                    $sql2="insert into airport(A_NAME,STATE,COUNTRY,C_NAME) values ('$airportname','$state','$country','$city')";
+                    $sql2="insert into airport(A_NAME,STATE,COUNTRY,C_NAME) values ('$airportname','$state','$country','$source')";
                     if(mysqli_query($con,$sql2)){
                         $flag=$flag+1;
                     }

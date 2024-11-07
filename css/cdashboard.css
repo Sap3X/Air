@@ -1,0 +1,23 @@
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav a{
+    color: white;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.book-tickets, .cancelticket, .modifyticket{
+    width: 220px;
+}
+
+.flight a:hover, .employee a:hover{
+    background-color: hsl(0, 0%, 90%);
+    color: black;
+}
