@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="../css/dashboard.css">
     <style>
         header{
-            padding-left: 83%;
+            padding-left: 74%;
         }
 
         .title{
 			position: absolute;
 			top: 15%;
 			left: 40%;
-			/*transform: translate(-50%,-50%);*/
 		}
 
 		.title h1{
@@ -31,7 +30,6 @@
 			position: absolute;
 			top: 27%;
 			left: 32%;
-			/*transform: translate(-50%,-50%);*/
 			border: 1px solid #fff;
 			padding: 10px 30px;
 			color: #fff;
@@ -46,29 +44,11 @@
     <header class="main">
         <ul>
             <li class="active"><a href="reference.php">Reference</a></li>
+            <li><a href="../html/airlinedatabase.html">Airline Database</a></li>
             <li><a href="../html/addflight.html">Back</a></li>
             <li><a href="../home.html">Home</a></li>
         </ul>
     </header>
-    <nav class="nav">
-        <div class="flight">
-            <h1>Flight Details</h1>
-            <div class="flight-details">
-                <a href="../html/Dashboard.html">Dashboard</a>
-                <a href="viewflight.php">View Flights</a>
-                <a href="../html/addflight.html">Add Flights</a>
-                <a href="../html/deleteflight.html">Delete Flights</a>
-                <a href="../html/modifyflight.html">Modify Flights</a>			
-            </div>
-        </div>
-        <div class="employee">
-            <h1>Employees Details</h1>
-            <div class="employee-details">
-                <a href="../html/viewemployee.html">View Emoloyee</a>
-                <a href="../html/addemployee">Add Employee</a>
-            </div>
-        </div>
-    </nav>
     <div class="title">
 	    <h1>Airlines ID</h1>
 	</div>

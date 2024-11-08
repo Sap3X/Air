@@ -50,13 +50,6 @@
                 <a href="../html/modifyflight.html">Modify Flights</a>			
             </div>
         </div>
-        <div class="employee">
-            <h1>Employees Details</h1>
-            <div class="employee-details">
-                <a href="../html/viewemployee.html">View Emoloyee</a>
-                <a href="../html/addemployee">Add Employee</a>
-            </div>
-        </div>
     </nav>
     <div class="title">
 		<h1>ALL FLIGHTS</h1>

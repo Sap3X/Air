@@ -47,16 +47,59 @@
     <link rel="stylesheet" href="../css/utility.css">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/cdashboard.css">
-    <title>Dashboard | Airline Management System</title>
+    <style>
+		header{
+			padding-left: 86%;
+		}
+
+		.title h1{
+			position: absolute;
+			top: 22%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		div.a{
+			position: absolute;
+			left: 40%;
+			top: 5%;
+			color: #fff;
+			font-size: 30px;
+		}
+
+		div.b{
+			border: 1px solid #fff;
+			padding: 10px 30px;
+			color: #fff;
+			text-decoration: none;
+			position: absolute;
+			top: 55%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			font-size: 23px;
+		}
+
+        div.print{
+            font-size: 5px;
+            position: absolute;
+			top: 95%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+            border-radius: 10px;
+        }
+    </style>
+    <title>Review Ticket | Airline Management System</title>
 </head>
 <body>
     <header class="main">
         <ul>
-            <li class="active"><a href="cdashboard.html">Dashboard</a></li>
+            <li class="active"><a href="reviewticket.php">Review Ticket</a></li>
             <li><a href="../home.html">Home</a></li>
         </ul>
     </header>
-    <div class="a"><h1>E-Ticket</h1></div>
+    <div class="title">
+		<h1>E- Ticket</h1>
+	</div>
 	<div class="b">
 		<?php echo "First Name  :".$fname ?></br>
 		<?php echo "Last Name  :".$lname ?></br>

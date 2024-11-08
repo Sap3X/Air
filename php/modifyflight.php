@@ -41,6 +41,10 @@
     <link rel="stylesheet" href="../css/dashboard.css">
 	<script src="../js/addflight.js" defer></script>
 	<style>
+		header{
+			padding-left: 83% ;
+		}
+
 		.title{
 			position: absolute;
 			top: 15%;
@@ -103,29 +107,11 @@
 <body>
     <header class="main">
         <ul>
-            <li class="active"><a href="modifyflight.php">modifyflight</a></li>
+            <li class="active"><a href="modifyflight.php">Modify flight</a></li>
+			<li><a href="../html/modifyflight.html">Back</a></li>
             <li><a href="../home.html">Home</a></li>
         </ul>
     </header>
-    <nav class="nav">
-        <div class="flight">
-            <h1>Flight Details</h1>
-            <div class="flight-details">
-                <a href="../html/Dashboard.html">Dashboard</a>
-                <a href="viewflight.php">View Flights</a>
-                <a href="../html/addflight.html">Add Flights</a>
-                <a href="../html/deleteflight.html">Delete Flights</a>
-                <a href="../html/modifyflight.html">Modify Flights</a>			
-            </div>
-        </div>
-        <div class="employee">
-            <h1>Employees Details</h1>
-            <div class="employee-details">
-                <a href="../html/viewemployee.html">View Emoloyee</a>
-                <a href="../html/addemployee">Add Employee</a>
-            </div>
-        </div>
-    </nav>
 	<div class="title">
 		<h1>Modify Flight Details</h1>
 	</div>

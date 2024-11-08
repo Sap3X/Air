@@ -87,24 +87,11 @@
 <body>
     <header class="main">
         <ul>
-            <li class="active"><a href="searchflight.php">Dashboard</a></li>
+            <li class="active"><a href="searchflight.php">Select Seat</a></li>
 			<li><a href="../html/searchflight.html">Back</a></li>
             <li><a href="../home.html">Home</a></li>
         </ul>
     </header>
-    <nav class="nav">
-        <div class="book-tickets">
-            <h1><a href="../html/searchflight.html">Book Ticket</a></h1>
-        </div>
-
-        <div class="cancelticket">
-            <h1><a href="../html/cancelticket.html">Cancel Ticket</a></h1>
-        </div>
-
-        <div class="modifyticket">
-            <h1><a href="../html/modifyticket.html">Modify Ticket</a></h1>
-        </div>
-    </nav>
 	
 	<div class="title">
 		<h1>Available Flights</h1>
@@ -143,7 +130,7 @@
 					<td><?php echo $rows['AIRLINE_ID']?></td>
 					<td><?php echo $rows['PRICE_ECONOMY']?></td>
 					<td><?php echo "ECONOMY";?></td>
-					<td>&nbsp;<button type="submit"><a href="postflightcodeeconomy.php?id=<?php echo $rows['FLIGHT_CODE'] ?>">Select</a></button></td>
+					<td>&nbsp;<button type="submit"><a href="economy.php?id=<?php echo $rows['FLIGHT_CODE'] ?>">Select</a></button></td>
 				</tr>
 				<tr>
 					<td><?php echo $rows['DEPARTURE'] ?></td>
@@ -153,7 +140,7 @@
 					<td><?php echo $rows['AIRLINE_ID']?></td>
 					<td><?php echo $rows['PRICE_STUDENTS']?></td>
 					<td><?php echo "STUDENTS";?></td>
-					<td>&nbsp;<button type="submit"><a href="postflightcodestudents.php?id=<?php echo $rows['FLIGHT_CODE'] ?>">Select</a></button></td>
+					<td>&nbsp;<button type="submit"><a href="students.php?id=<?php echo $rows['FLIGHT_CODE'] ?>">Select</a></button></td>
 				</tr>
 				<tr>
 					<td><?php echo $rows['DEPARTURE'] ?></td>
@@ -163,7 +150,7 @@
 					<td><?php echo $rows['AIRLINE_ID']?></td>
 					<td><?php echo $rows['PRICE_DIFFERENTLYABLED']?></td>
 					<td><?php echo "DIFFERENTLY ABLED";?></td>
-					<td>&nbsp;<button type="submit"><a href="postflightcodediff.php?id=<?php echo $rows['FLIGHT_CODE'] ?>">Select</a></button></td>
+					<td>&nbsp;<button type="submit"><a href="diff.php?id=<?php echo $rows['FLIGHT_CODE'] ?>">Select</a></button></td>
 				</tr>
 			<?php	
 				}

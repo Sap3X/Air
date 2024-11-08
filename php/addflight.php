@@ -44,27 +44,23 @@
                     if(mysqli_query($con,$sql5)){
                         $flag=$flag+1;
                     }
-                    if ($flag=4){
+                    if($flag=4){
                         echo "<script>alert('Inserted successfully')</script>";
                         echo "<script>window.location='../home.html'</script>";
-                    }
-                    else{
+                    }else{
                         echo "<script>alert('Insertion Failed')</script>";
                     }
-                }
-                else{
+                }else{
                     echo "<script>alert('Flight Code should be of length 4')</script>";
                     echo "<script>window.location='../html/addflight.html'</script>";
                 }
-            }
-            else{
+            }else{
                 echo "<script>alert('Duplicate Flight Code !')</script>";
                 echo "<script>window.location='../html/addflight.html'</script>";
             }
-        }
-        else{
+        }else{
             echo "<script>alert('Airline is not update in database.')</script>";
             echo "<script>window.location='../html/addflight.html'</script>";
         }
-     }
+    }
 ?>
