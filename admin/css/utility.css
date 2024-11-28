@@ -1,0 +1,35 @@
+header{
+    padding-top: 1%;
+    padding-left: 80%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+    
+ul li{
+    list-style: none;
+}
+    
+ul li a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 20px;
+}
+        
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+        
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.title h1{
+    color: #fff;
+    font-size: 50px;
+}
